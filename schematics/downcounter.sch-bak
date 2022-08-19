@@ -1,0 +1,86 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	5950 3550 6400 3550
+Wire Wire Line
+	3200 2900 4700 2900
+Wire Wire Line
+	4700 2900 4700 4000
+Wire Wire Line
+	4700 4000 4800 4000
+Wire Wire Line
+	3050 4600 4700 4600
+Wire Wire Line
+	4700 4600 4700 4150
+Wire Wire Line
+	4700 4150 4800 4150
+Wire Wire Line
+	4700 2900 6300 2900
+Wire Wire Line
+	6300 2900 6300 4000
+Wire Wire Line
+	6300 4000 6400 4000
+Connection ~ 4700 2900
+Wire Wire Line
+	4700 4600 6300 4600
+Wire Wire Line
+	6300 4600 6300 4150
+Wire Wire Line
+	6300 4150 6400 4150
+Connection ~ 4700 4600
+Text HLabel 3200 2900 0    50   Input ~ 0
++5V
+Text HLabel 3050 4600 0    50   Input ~ 0
+Gnd
+Text HLabel 3100 3550 0    50   Input ~ 0
+Clk
+Wire Wire Line
+	3100 3550 4800 3550
+Text HLabel 8450 3550 2    50   Output ~ 0
+CarryOut
+Wire Wire Line
+	7550 3550 8450 3550
+Wire Notes Line
+	3700 2600 3700 5000
+Wire Notes Line
+	3700 5000 8050 5000
+Wire Notes Line
+	8050 5000 8050 2600
+Wire Notes Line
+	8050 2600 3700 2600
+Text Notes 3700 2550 0    98   ~ 0
+Minutes downcounter (59 to 0)
+$Sheet
+S 4800 3450 1150 900 
+U 60B18436
+F0 "Minutes downcounter 1" 50
+F1 "counter 1.sch" 50
+F2 "+5V" I L 4800 4000 50 
+F3 "Clk" I L 4800 3550 50 
+F4 "Gnd" I L 4800 4150 50 
+F5 "CarryOut" O R 5950 3550 50 
+$EndSheet
+$Sheet
+S 6400 3450 1150 900 
+U 60B17E84
+F0 "Miniutes downcounter 2" 50
+F1 "counter 2.sch" 50
+F2 "+5V" I L 6400 4000 50 
+F3 "Clk" I L 6400 3550 50 
+F4 "Gnd" I L 6400 4150 50 
+F5 "CarryOut" O R 7550 3550 50 
+$EndSheet
+$EndSCHEMATC

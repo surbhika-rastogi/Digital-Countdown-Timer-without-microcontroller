@@ -1,0 +1,196 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 15 12
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Wire Wire Line
+	4700 2900 4700 4000
+Wire Wire Line
+	4700 4000 4800 4000
+Wire Wire Line
+	4700 4600 4700 4150
+Wire Wire Line
+	4700 4150 4800 4150
+Connection ~ 4700 4600
+Text HLabel 1700 2900 0    50   Input ~ 0
++5V
+Text HLabel 1650 4600 0    50   Input ~ 0
+Gnd
+Text Notes 3700 2550 0    98   ~ 0
+Minutes downcounter (59 to 0)
+$Sheet
+S 4800 3450 1150 900 
+U 60B0BDD4
+F0 "minutes downcounter 1" 50
+F1 "minutes downcounter 1.sch" 50
+F2 "+5V" I L 4800 4000 50 
+F3 "Clk" I L 4800 3550 50 
+F4 "Gnd" I L 4800 4150 50 
+F5 "CarryOut" O R 5950 3550 50 
+$EndSheet
+Wire Wire Line
+	5950 3550 6450 3550
+Wire Wire Line
+	6250 3100 6250 3450
+Wire Wire Line
+	6250 3450 6450 3450
+Wire Wire Line
+	6450 3350 6450 2900
+Connection ~ 6450 2900
+Wire Wire Line
+	6450 2900 6950 2900
+Wire Wire Line
+	6950 3650 6950 4600
+Connection ~ 6950 4600
+Wire Wire Line
+	6950 3250 6950 2900
+$Comp
+L 74xx_IEEE:7411 U?
+U 2 1 60C4FF73
+P 6950 3450
+F 0 "U?" H 6950 3866 50  0000 C CNN
+F 1 "7411" H 6950 3775 50  0000 C CNN
+F 2 "" H 6950 3450 50  0001 C CNN
+F 3 "" H 6950 3450 50  0001 C CNN
+	2    6950 3450
+	1    0    0    -1  
+$EndComp
+Text HLabel 1750 4150 0    50   Input ~ 0
+Push1
+Text HLabel 1750 4800 0    50   Input ~ 0
+Push2
+Wire Wire Line
+	7450 4800 7450 3650
+Text HLabel 1700 3100 0    50   Input ~ 0
+Clk_Switch
+$Comp
+L 74xx_IEEE:7411 U?
+U 3 1 60C6BA99
+P 2850 3450
+F 0 "U?" H 2850 3866 50  0000 C CNN
+F 1 "7411" H 2850 3775 50  0000 C CNN
+F 2 "" H 2850 3450 50  0001 C CNN
+F 3 "" H 2850 3450 50  0001 C CNN
+	3    2850 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:7432 U?
+U 4 1 60C70ED4
+P 3900 3550
+F 0 "U?" H 3900 3966 50  0000 C CNN
+F 1 "7432" H 3900 3875 50  0000 C CNN
+F 2 "" H 3900 3550 50  0001 C CNN
+F 3 "" H 3900 3550 50  0001 C CNN
+	4    3900 3550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6950 4600 8000 4600
+Wire Wire Line
+	4700 4600 6950 4600
+Wire Wire Line
+	8550 3550 8750 3550
+Wire Wire Line
+	9900 3550 10350 3550
+$Comp
+L 74xx_IEEE:7432 U?
+U 3 1 60C71392
+P 8000 3550
+F 0 "U?" H 8000 3966 50  0000 C CNN
+F 1 "7432" H 8000 3875 50  0000 C CNN
+F 2 "" H 8000 3550 50  0001 C CNN
+F 3 "" H 8000 3550 50  0001 C CNN
+	3    8000 3550
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 8750 3450 1150 900 
+U 60B0BDDA
+F0 "minutes downcounter 2" 50
+F1 "minutes downcounter 2.sch" 50
+F2 "+5V" I L 8750 4000 50 
+F3 "Clk" I L 8750 3550 50 
+F4 "Gnd" I L 8750 4150 50 
+F5 "CarryOut" O R 9900 3550 50 
+$EndSheet
+Text HLabel 10350 3550 2    50   Output ~ 0
+CarryOut
+Wire Wire Line
+	4700 2900 6450 2900
+Connection ~ 4700 2900
+Wire Wire Line
+	6950 2900 8000 2900
+Wire Wire Line
+	8000 2900 8000 3350
+Connection ~ 6950 2900
+Wire Wire Line
+	2350 2900 2350 3350
+Connection ~ 2350 2900
+Wire Wire Line
+	2350 2900 4700 2900
+Wire Wire Line
+	4450 3550 4800 3550
+Wire Wire Line
+	3350 4150 3350 3650
+Wire Wire Line
+	2050 3100 2050 3450
+Wire Wire Line
+	2050 3450 2350 3450
+Connection ~ 2050 3100
+Wire Wire Line
+	2050 3100 6250 3100
+Wire Wire Line
+	1750 4150 3350 4150
+Wire Wire Line
+	1750 4800 7450 4800
+Wire Wire Line
+	1650 4600 4700 4600
+Text HLabel 1700 3550 0    50   Input ~ 0
+Clk
+Wire Wire Line
+	1700 3550 2350 3550
+Wire Wire Line
+	1700 2900 2350 2900
+Wire Wire Line
+	1700 3100 2050 3100
+Wire Wire Line
+	8000 3800 8000 4600
+Connection ~ 8000 4600
+Wire Wire Line
+	8550 4600 8550 4150
+Wire Wire Line
+	8550 4150 8750 4150
+Wire Wire Line
+	8000 4600 8550 4600
+Wire Wire Line
+	8750 4050 8750 4000
+Wire Wire Line
+	8750 4000 8550 4000
+Wire Wire Line
+	8550 4000 8550 3550
+Wire Wire Line
+	8550 2900 8000 2900
+Connection ~ 8550 3550
+Wire Wire Line
+	8550 3550 8550 2900
+Connection ~ 8000 2900
+Wire Notes Line
+	10200 2600 10200 5200
+Wire Notes Line
+	10200 5200 1900 5200
+Wire Notes Line
+	1900 5200 1900 2600
+Wire Notes Line
+	1900 2600 10200 2600
+$EndSCHEMATC

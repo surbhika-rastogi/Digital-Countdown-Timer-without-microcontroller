@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Countdown-Timer-rescue)(type Legacy)(uri "${KIPRJMOD}/Countdown Timer-rescue.lib")(options "")(descr ""))
+)
